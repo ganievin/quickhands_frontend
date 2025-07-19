@@ -5,11 +5,11 @@
     text-decoration: none;
 }
 
-/* body {
+ body {
     font-family: "Onest", sans-serif;
     color: #333;
     background-color: #fafafa;
-} */
+} 
 
 .container {
     max-width: 100%;
@@ -74,7 +74,7 @@
 }
 
 .hero {
-    height: 30vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;

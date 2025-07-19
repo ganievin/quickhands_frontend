@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./styles/BEM blocks/primary-font/primary-font.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- Используем современный шрифт -->
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,29 +21,40 @@
         <nav class="header__panel header__panel--left">
             <div class="header__panel-main header__panel-main--left">
                 <div class="icon-logo header__acc-btn"> </div>
-                <div class="primary-font"> Profile Icon </div>
+                <a class="primary-font header__panel-btn header__panel-btn--left" href="/"> 
+                    <img class="header__icon" src="./images/header__icon--acc/header__icon--acc.svg" alt="" height="30" width="30"> 
+                </a>
             </div>
             <div class="header__panel-sash header__panel-sash--left">
-                <div class="header__panel-btn">Профиль</div>
+                <div class="header__panel-text primary-font">Профиль</div>
             </div>
         </nav>
 
         <nav class="header__panel header__panel--mid">
             <div class="header__panel-main header__panel-main--mid">
-                <div class="header__panel-btn"><a class="primary-font" href="">Исполнителю</a></div>
-                <div class="header__panel-btn"><a class="primary-font" href="">Заказчику</a></div>
+                <a class="header__panel-btn primary-font" href="/">Исполнителю</a>
+                <button class="header__panel-btn header__panel-btn--search" href=""> 
+                    <img class="header__icon header__icon--search" src="./images/header__panel-btn/header__panel-btn--search.svg" alt="" height="30" width="30"> 
+                    <span class="header__panel-text primary-font"> Поиск </span>
+                </button>
+                <a class="header__panel-btn primary-font" href="/">Заказчику</a>
             </div>
+
             <div class="header__panel-sash header__panel-sash--mid">
-                <div class="header__panel-btn">icon + logo</div>
+                <a class="primary-font header__panel-btn header__panel-btn--home">
+                    <img class="header__icon header__icon--logo" src="./images/header__icon--logo/header__icon--logo.svg" alt="" height="30" width="30"> OpenAI
+                </a>
             </div>
         </nav>
 
         <nav class="header__panel header__panel--right">
             <div class="header__panel-main header__panel-main--right">
-                <div class="primary-font"> Burger Button Icon </div>
+                <a class="primary-font header__panel-btn header__panel-btn--right" href="/">
+                    <img class="header__acc-icon" src="./images/header__icon--burger/header__icon--burger.svg" alt="" height="30" width="30">
+                </a>
             </div>
             <div class="header__panel-sash header__panel-sash--right">
-                <div class="header__panel-btn">Навигация</div>
+                <div class="header__panel-text primary-font">Навигация</div>
             </div>
         </nav>    
     </header>
