@@ -3,14 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: #7c8092;
 }
 
-body {
+/* body {
     font-family: "Onest", sans-serif;
     color: #333;
     background-color: #fafafa;
-}
+} */
 
 .container {
     max-width: 100%;
@@ -35,7 +34,7 @@ body {
     margin-bottom: 0px!important;
 }
 
-.header {
+/* .header {
     gap: 1vw;
     margin: 2vw;
     display: flex;
@@ -45,7 +44,7 @@ body {
     background-color: white;
     position: relative;
     z-index: 1000;
-}
+} */
 
 .logo {
     font-size: 2em;
@@ -85,7 +84,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: contrast(120%);
 }
 
 .hero h2 {

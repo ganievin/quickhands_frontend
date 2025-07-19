@@ -3,31 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Hello page</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles/BEM blocks/header/header.css">
+    <link rel="stylesheet" href="./styles/BEM blocks/primary-font/primary-font.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- Используем современный шрифт -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
-            <h1 class="logo orangecolor">Brain<span class="greencolor">H</span>ub</h1>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#about-us">О нас</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-        <button class="btn btn-outline">Регистрация</button>
-        <button class="btn btn-outline">Войти</button>
+        
+        <nav class="header__panel header__panel--left">
+            <div class="header__panel-main header__panel-main--left">
+                <div class="icon-logo header__acc-btn"> </div>
+                <div class="primary-font"> Profile Icon </div>
+            </div>
+            <div class="header__panel-sash header__panel-sash--left">
+                <div class="header__panel-btn">Профиль</div>
+            </div>
+        </nav>
+
+        <nav class="header__panel header__panel--mid">
+            <div class="header__panel-main header__panel-main--mid">
+                <div class="header__panel-btn"><a class="primary-font" href="">Исполнителю</a></div>
+                <div class="header__panel-btn"><a class="primary-font" href="">Заказчику</a></div>
+            </div>
+            <div class="header__panel-sash header__panel-sash--mid">
+                <div class="header__panel-btn">icon + logo</div>
+            </div>
+        </nav>
+
+        <nav class="header__panel header__panel--right">
+            <div class="header__panel-main header__panel-main--right">
+                <div class="primary-font"> Burger Button Icon </div>
+            </div>
+            <div class="header__panel-sash header__panel-sash--right">
+                <div class="header__panel-btn">Навигация</div>
+            </div>
+        </nav>    
     </header>
+
+
+
+
 
     <section id="hero-section" class="hero">
         <div class="container maincont">
@@ -44,12 +67,14 @@
             <div class="service-blocks">
                 <div class="block block-orderer">
                     <h3>Я - Заказчик</h3>
-                    <p>Quisque volutpat ex non diam vulputate sollicitudin. Etiam sodales tortor in purus rhoncus congue.</p>
+                    <p>Quisque volutpat ex non diam vulputate sollicitudin. Etiam sodales tortor in purus rhoncus
+                        congue.</p>
                     <button class="btn btn-outline inbe">Разместить заказ</button>
                 </div>
                 <div class="block block-executor">
                     <h3>Я - Исполнитель</h3>
-                    <p>Suspendisse potenti. Aliquam semper sapien nec nunc hendrerit elementum. Donec efficitur est eu risus posuere, ac venenatis felis maximus.</p>
+                    <p>Suspendisse potenti. Aliquam semper sapien nec nunc hendrerit elementum. Donec efficitur est eu
+                        risus posuere, ac venenatis felis maximus.</p>
                     <button class="btn btn-outline inbe">Исполнить заказ</button>
                 </div>
             </div>
@@ -60,7 +85,8 @@
         <div class="container">
             <h2>О нас</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et eros vel tellus pulvinar porta.</p>
-            <p>Proin a dapibus arcu. Integer euismod ante sed magna fermentum feugiat. Vestibulum quis turpis vitae enim tempus accumsan ut at erat.</p>
+            <p>Proin a dapibus arcu. Integer euismod ante sed magna fermentum feugiat. Vestibulum quis turpis vitae enim
+                tempus accumsan ut at erat.</p>
         </div>
     </section>
 
